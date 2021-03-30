@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>파일명 확장자 워드클라우드</title>
+<link rel="stylesheet" href="js/jqcloud.css">
+<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="js/jqcloud.js" charset="utf-8"></script>
+
+<script>
+var words = [
+	{text:"gif", weight:73701},
+	{text:"jpeg",weight:244208},
+	{text:"jpg",weight:2633352},
+	{text:"png",weight:195287}
+];
+
+$(function() {
+	$("#keywords").jQCloud(words, {
+		width: 500,
+		height: 350
+	});
+});
+</script>
+</head>
+<body>
+<div id="keywords"></div>
+</body>
+</html>
